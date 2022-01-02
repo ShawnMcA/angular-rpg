@@ -1,0 +1,8 @@
+<div class="menu-container">
+  <div *ngFor="let item of menuItems" class="menu-item">
+    <a class="menu-item-text" routerLink={{item.link}} [ngClass]="textColor">
+      <i class={{item.icon}}></i>
+      {{item.text}}
+    </a>
+  </div>
+</div>
