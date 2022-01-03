@@ -1,0 +1,28 @@
+[
+  {
+    "pkItemId": 10000,
+    "itemIcon": "",
+    "itemType": "equipment",
+    "itemName": "Sword",
+    "itemDamage": 10,
+    "itemValue": 10
+  },
+  {
+    "pkItemId": 20000,
+    "itemIcon": "",
+    "itemType": "consumable",
+    "itemName": "Health Potion",
+    "itemEffect": "health",
+    "itemEffectValue": 10,
+    "itemValue": 10
+  },
+  {
+    "pkItemId": 20001,
+    "itemIcon": "",
+    "itemType": "consumable",
+    "itemName": "Mana Potion",
+    "itemEffect": "mana",
+    "itemEffectValue": 10,
+    "itemValue": 10
+  }
+]

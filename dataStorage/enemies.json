@@ -1,0 +1,14 @@
+[
+  {
+    "pkEnemyId": 1,
+    "enemyName": "Earth Elemental",
+    "enemyLevel": 5,
+    "enemyHp": 30,
+    "enemyMp": 10,
+    "enemyAttack": 10,
+    "enemyDefense": 10,
+    "enemyMagicAttack": 10,
+    "enemyMagicDefense": 10,
+    "enemySpeed": 10
+  }
+]

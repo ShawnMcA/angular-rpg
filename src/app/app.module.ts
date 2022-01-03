@@ -1,6 +1,9 @@
+// Misc imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
+// Component imports
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameAreaComponent } from './components/pages/game-area/game-area.component';
@@ -26,7 +29,8 @@ import { BattleMenuRunComponent } from './components/pages/rpg/battle-screen/com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

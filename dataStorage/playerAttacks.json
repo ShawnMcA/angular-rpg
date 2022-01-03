@@ -1,0 +1,18 @@
+[
+  {
+    "pkAttackId": 1000,
+    "attackName": "Slash",
+    "attackType": "physical",
+    "mpCost": 0,
+    "baseDamage": 5,
+    "levelRequired": 0
+  },
+  {
+    "pkAttackId": 2000,
+    "attackName": "FireBall",
+    "attackType": "magical",
+    "mpCost": 2,
+    "baseDamage": 7,
+    "levelRequired": 0
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "pkPlayerInventoryId": 1,
+    "fkItemId": 10000
+  },
+  {
+    "pkPlayerInventoryId": 2,
+    "fkItemId": 20000
+  },
+  {
+    "pkPlayerInventoryId": 3,
+    "fkItemId": 20001
+  }
+]

@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { PlayerAttack } from 'src/app/components/shared/interfaces/player-attack';
 
 @Component({
   selector: 'app-battle-menu-fight',
@@ -6,11 +7,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./battle-menu-fight.component.scss']
 })
 export class BattleMenuFightComponent implements OnInit {
-  @Output() buttonClick = new EventEmitter<string>();
+  @Output() buttonClick = new EventEmitter<number>();
+  @Input() playerAttacks!: PlayerAttack[];
 
   constructor() { }
 
-  submitAction(action: string) {
+  submitAction(action: number) {
     this.buttonClick.emit(action);
   }
 
