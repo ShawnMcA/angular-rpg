@@ -14,6 +14,8 @@ import { BattleMenuActionSelectionComponent } from './components/pages/rpg/battl
 import { BattleMenuFightComponent } from './components/pages/rpg/battle-screen/components/battle-menu-fight/battle-menu-fight.component';
 import { BattleMenuItemComponent } from './components/pages/rpg/battle-screen/components/battle-menu-item/battle-menu-item.component';
 import { BattleMenuRunComponent } from './components/pages/rpg/battle-screen/components/battle-menu-run/battle-menu-run.component';
+import { BattlePlayerContainerComponent } from './components/pages/rpg/battle-screen/components/battle-player-container/battle-player-container.component';
+import { BattleEnemyContainerComponent } from './components/pages/rpg/battle-screen/components/battle-enemy-container/battle-enemy-container.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BattleMenuRunComponent } from './components/pages/rpg/battle-screen/com
     BattleMenuActionSelectionComponent,
     BattleMenuFightComponent,
     BattleMenuItemComponent,
-    BattleMenuRunComponent
+    BattleMenuRunComponent,
+    BattlePlayerContainerComponent,
+    BattleEnemyContainerComponent
   ],
   imports: [
     BrowserModule,

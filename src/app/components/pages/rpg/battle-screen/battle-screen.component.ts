@@ -104,7 +104,7 @@ export class BattleScreenComponent implements OnInit {
     this.playerService.getPlayerAttacks()
       .subscribe((data: any) => {        
         data.forEach((attack: any) => {
-          if(this.playerData.level >= attack.levelRequired) {
+          if(this.playerData.level && this.playerData.level >= attack.levelRequired) {
             this.playerAttacks.push({
               id: attack.pkAttackId,
               name: attack.attackName,

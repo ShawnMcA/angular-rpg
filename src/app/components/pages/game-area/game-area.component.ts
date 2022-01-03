@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenData } from '../../shared/interfaces/screen-data';
+import { ScreenStateService } from '../../shared/services/screen-state.service';
 
 @Component({
   selector: 'app-game-area',
@@ -7,11 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameAreaComponent implements OnInit {
 
-  currentScreen: string = 'battle-screen';
+  screenData: ScreenData[] = [];
+  currentScreen!: ScreenData;
 
-  constructor() { }
+  constructor(private screenStateService: ScreenStateService) {  }
+  
+  private _setInitialScreenData() {
+    this.screenStateService.getScreenData()
+      .subscribe((data: any) => {
+        
+        data.forEach((s: any) => this.screenData.push({
+          id: s.pkScreenId,
+          screenName: s.screenName
+        }));
+
+        this.currentScreen = this.screenData[0];
+      });
+  }
 
   ngOnInit(): void {
+    this._setInitialScreenData();
+  }
+
+  ngAftertViewInit(): void {
     
   }
 

@@ -1,8 +1,9 @@
-const  EnemyController = require('./enemyController');
+const EnemyController = require('./enemyController');
 const ItemController = require('./itemController');
 const PlayerController = require('./playerController');
-const cors = require("cors");
+const ScreenController = require('./screenController');
 
+const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -26,3 +27,4 @@ const server = app.listen(process.env.PORT || 3000, function () {
 app.use('/api/enemy', EnemyController);
 app.use('/api/item', ItemController);
 app.use('/api/player', PlayerController);
+app.use('/api/screens', ScreenController);
